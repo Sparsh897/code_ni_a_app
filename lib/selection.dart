@@ -73,12 +73,9 @@ class _SelectionState extends State<Selection> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Three Cards Example'),
-      ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 80),
           child: Center(
             child: Column(
               children: <Widget>[
@@ -109,6 +106,7 @@ class _SelectionState extends State<Selection> with TickerProviderStateMixin {
             width: MediaQuery.of(context).size.width * 0.8,
             height: MediaQuery.of(context).size.height * 0.25,
             child: Card(
+              elevation: 10,
               child: Center(
                 child: Text(
                   text,
