@@ -16,7 +16,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       title: Text(title),
       centerTitle: true,
-      // You can add more properties here as needed
+    
     );
   }
 
